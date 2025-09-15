@@ -19,7 +19,7 @@ time.sleep(3)
 #pyautogui.center(dino_location)
 reference_color = getpixelcolor.pixel(185, 347)
 # Move the mouse to center of scanning region
-x = 730
+x = 727
 #770
 
 y = 430
@@ -27,7 +27,7 @@ width = 30
 height = 10
 #0.017
 jump_length = 0.016
-downtime = 0.06
+downtime = 0.03
 
 pyautogui.moveTo(x, y)
 
@@ -47,7 +47,7 @@ while True:
         pyautogui.keyDown('up')
         time.sleep(jump_length)
         pyautogui.keyUp('up')
-        #time.sleep(downtime)
+        time.sleep(0.001)
         pyautogui.keyDown('down')
         time.sleep(downtime)
         pyautogui.keyUp('down')
